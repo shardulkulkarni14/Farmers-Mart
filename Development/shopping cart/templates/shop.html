@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Site Metas -->
+    <title>Food Funday Restaurant - One page HTML Responsive</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'images/favicon.ico')}}" type="image/x-icon" />
+    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename = 'images/apple-touch-icon.png')}}">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}">
+    <!-- Site CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+   <!-- <link rel="stylesheet" href="css/try1.css"> -->
+   <link rel="stylesheet" href="{{url_for('static', filename = 'css/try1.css')}}">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/responsive.css')}}">
+<!-- <link rel="stylesheet" href="css/try1.css"> -->
+<link rel="stylesheet" href="{{url_for('static', filename = 'css/try1.css')}}">
+    <!-- color -->
+    <!-- <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" /> -->
+    <link id="changeable-colors" rel="stylesheet" href="{{url_for('static', filename = 'css/colors/orange.css')}}" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css')}}" rel="stylesheet">
+
+        <!-- <script src="js/modernizer.js"></script> -->
+        <script src="{{url_for('static', filename = 'js/modernizer.js')}}"></script>
+        <!-- vendor -->
+        <!-- <link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'assets/vendor/aos/aos.css')}}">
+          <!-- <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"> -->
+          <link href="{{url_for('static', filename = 'assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+
+          
+
+
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#profile">Profile</a></li>
+                                    <li><a href="#offer">Offers/Discounts</a></li>
+                                    <li><a href="#order">order History</a></li>
+                                    <li><a href="cfeed.html">Feed</a></li>
+                                    <li><a href="#partners">Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+	
+
+
+<div style="background-image: url(static/images/banner.jpg);
+background-repeat: no-repeat;
+background-position:center;
+-webkit-background-size: cover;
+background-attachment: fixed;
+background-size: cover;
+" >
+	
+<!-- All products -->
+<section id="allpro" class="portfolio section "> 
+	<div class="container">
+        <div class="section-title">
+            <h2 style="margin-top: 50px; color: white">All Products :</h2>
+        </div>
+    </div>
+    <div class="flexbox">
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro1.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Tomato " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="3.5" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="36/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value=" 50kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="Abc" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro2.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Potato  " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.1" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="26/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value=" 55kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="Abc" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro3.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Rice  " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.3" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="205/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value=" 500kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="Abc" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro4.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Barley  " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.5" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="229/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value=" 400kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="Abc" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <div class="flexbox" style="margin-top: 20px">
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro2.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Potato  " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="3.2" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="22/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value=" 80kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="xyz" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro5.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Cotton " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.5" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="114.5/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value=" 70kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="xyz" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro6.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Milk  " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.3" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="48/Lt" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="As per Booking" style="width: 120px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="ppt" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/pro7.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Lily  " style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.3" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="72/Dozen" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available:</label> <input type="fixed" name="" value="Advance Booking" style="width: 130px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="lau" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black; width: 190px;">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of all products -->
+
+
+<!-- medicine products -->
+<section id="allpro" class="portfolio section "> 
+	<div class="container">
+        <div class="section-title">
+            <h2 style="margin-top: 50px; color: white">Medecinal Plants :</h2>
+        </div>
+    </div>
+    <div class="flexbox">
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/med1.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Eclipta alba" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.5" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="500.2/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="60kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="wue" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/med2.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Kutki ~Picrohiza Kurroa" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="4.1" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="796/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="30kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="zoe" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/med3.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Tinospora cordifolia" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="3.7" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="820.3/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="20kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="po" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/med4.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Pterocarpus Marsupium" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Crop Score : </label> <input type="fixed" name="" value="3.5" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="320.8/Kg" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="34kg" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="tom" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end medicine products -->
+
+
+<!-- Stubble products -->
+<section id="allpro" class="portfolio section "> 
+	<div class="container">
+        <div class="section-title">
+            <h2 style="margin-top: 50px; color: white">Stubble  :</h2>
+        </div>
+    </div>
+    <div class="flexbox">
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/stu1.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Rice Stubble" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="10,000/Ton" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="15Ton" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="poe" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;margin-top: 20px;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/stu2.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Barley Stubble" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="25,000/Ton" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="10Ton" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="tom" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;margin-top: 20px;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/stu3.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Cron Stubble" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="12,000/Ton" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="20Ton" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="wua" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;margin-top: 20px;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardGreen">
+            <!-- <div class="flexcardNumber flexcardNumberGreen"></div> -->
+            <div class="flex flexcardTitle"><img src="{{url_for('static', filename = 'images/stu4.jpg')}}" style="border-radius: 20px"></div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left:  10px">Product Name : </label> <input type="fixed" name="" value="Sugarcane Stubble" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Price : </label> <input type="fixed" name="" value="3,500/Ton" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Quantity Available : </label> <input type="fixed" name="" value="25Ton" style="width: 90px;color: black; font-size: 16px;">
+            </div>
+            <div class="">
+                <label style="color: black; font-size: 16px;margin-left: 10px">Farmer Name : </label> <input type="fixed" name="" value="dede" style="width: 150px;color: black; font-size: 16px;">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;margin-top: 20px;width: 120px">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end medicine products -->
+
+</div>   
+
+    <div id="footer" class="footer-main">
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <img src="images/logo.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>New Menu</h3>
+                                <ul>
+                                    <li><a href="#">Italian Bomba Sandwich</a></li>
+                                    <li><a href="#">Double Dose of Pork Belly</a></li>
+                                    <li><a href="#">Spicy Thai Noodles</a></li>
+                                    <li><a href="#">Triple Truffle Trotters</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>6 E Esplanade, St Albans VIC 3021, Australia</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+									+91 80005 89080 
+								</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@foodfunday.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Monday - Thursday </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>Friday - Saturday </p>
+                                        <span>  11:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune is powered by <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <link href="https:/fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Site Metas -->
+    <title>Farmers mart</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'lease/images/favicon.ico')}}" type="image/x-icon" />
+    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename = 'lease/images/apple-touch-icon.png')}}">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'lease/css/bootstrap.min.css')}}">
+    <!-- Site CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'lease/css/style.css')}}">
+   <!-- <link rel="stylesheet" href="css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'lease/css/try1.css')}}">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'lease/css/responsive.css')}}">
+    <!-- <link rel="stylesheet" href="css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'lease/css/try1.css')}}">
+    <!-- color -->
+    <!-- <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" /> -->
+    <link id="changeable-colors" rel="stylesheet" href="{{url_for('static', filename = 'lease/css/colors/orange.css')}}" />
+    <!-- <link href="https:/unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https:/unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- <script src="js/modernizer.js"></script> -->
+        <script src="{{url_for('static', filename = 'lease/js/modernizer.js')}}"></script>
+        <!-- vendor -->
+        <!-- <link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'lease/assets/vendor/aos/aos.css')}}">
+          <!-- <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"> -->
+          <link href="{{url_for('static', filename = 'lease/assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+
+          
+
+
+
+
+    <!--[if lt IE 9]>
+      <script src="https:/oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https:/oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <!-- <img src="images/logo.png" alt=""> -->
+                                       <img src="static/indexx/images/lOGOO.png" alt="" style="margin-right: 10px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#profile">Profile</a></li>
+                                    <li><a href="#cart">Cart</a></li>
+                                    <li><a href="#cfeed">Feed</a></li>
+                                    <li><a href="#partners">Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+  <!-- end site-header -->
+	
+
+
+<div style="background-image: url(static/profile/indexx/images/banner.jpg);background-repeat: no-repeat;background-position:center;-webkit-background-size: cover;
+background-attachment: fixed;
+background-size: cover;">
+    <section id="lease" class="portfolio section ">  
+    <div class="flexbox" style="margin-top: 60px">
+         {% for item in lease_datas %} 
+        <div class="flexcard flexcardGreen">
+            <div class="flexcardNumber flexcardNumberBlue"></div>
+            <div class="flex flexcardTitle">{{item[1]}}</div>
+            <div class="flex flexcardText">
+                <p>Farmer's Name : </p> <input type="" name="" value="{{item[0]}}" style="width: 150px">
+            </div>
+            <div class="flex flexcardText">
+                <p>Land location : </p><input type="fixed" name="" value="{{item[2]}}" style="width: 160px">
+            </div>
+            <div class="flex flexcardText">
+               <p>Required no of workers : </p><input type="fixed" name="" value="{{item[4]}}" style="width: 90px">
+            </div>
+            <div class="flex flexcardText">
+               <p>Soil Type :</p> <input type="fixed" name="" value="{{item[3]}}" style="width: 190px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Preferred Crops : </p><input type="fixed" name="" value="{{item[6]}}" style="width: 130px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Required no of Experience : 
+</p><input type="fixed" name="" value="{{item[5]}}" style="width: 60px">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;">APPLY</button>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- <div class="flexcard flexcardBlue">
+            <div class="flexcardNumber flexcardNumberBlue">02</div>
+            <div class="flex flexcardTitle">4 Acres</div>
+             <div class="flex flexcardText">
+                <p>Farmer's Name : </p> <input type="fixed" name="" value=" xyz" style="width: 150px">
+            </div>
+            <div class="flex flexcardText">
+                <p>Land location : </p><input type="fixed" name="" value=" xyz" style="width: 160px">
+            </div>
+            <div class="flex flexcardText">
+               <p>Required no of wokers : </p><input type="fixed" name="" value=" xyz" style="width: 90px">
+            </div>
+            <div class="flex flexcardText">
+               <p>Soil Type :</p> <input type="fixed" name="" value=" xyz" style="width: 190px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Preferred Crops : </p><input type="fixed" name="" value=" xyz" style="width: 130px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Required no of Expirence : </p><input type="fixed" name="" value=" xyz" style="width: 60px">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;">APPLY</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardOrange">
+            <div class="flexcardNumber flexcardNumberOrange">03</div>
+            <div class="flex flexcardTitle">2 Acres</div>
+             <div class="flex flexcardText">
+                <p>Farmer's Name : </p> <input type="fixed" name="" value=" xyz" style="width: 150px">
+            </div>
+            <div class="flex flexcardText">
+                <p>Land location : </p><input type="fixed" name="" value=" xyz" style="width: 160px">
+            </div>
+            <div class="flex flexcardText">
+               <p>Required no of wokers : </p><input type="fixed" name="" value=" xyz" style="width: 90px">
+            </div>      
+            <div class="flex flexcardText">
+               <p>Soil Type :</p> <input type="fixed" name="" value=" xyz" style="width: 190px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Preferred Crops : </p><input type="fixed" name="" value=" xyz" style="width: 130px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Required no of Expirence : </p><input type="fixed" name="" value=" xyz" style="width: 60px">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;">APPLY</button>
+            </div>
+        </div>
+        <div class="flexcard flexcardPink">
+            <div class="flexcardNumber flexcardNumberPink">04</div>
+            <div class="flex flexcardTitle">3 Acres</div>
+             <div class="flex flexcardText">
+                <p>Farmer's Name : </p> <input type="fixed" name="" value=" xyz" style="width: 150px">
+            </div>
+            <div class="flex flexcardText">
+                <p>Land location : </p><input type="fixed" name="" value=" xyz" style="width: 160px">
+            </div>
+            <div class="flex flexcardText">
+               <p>Required no of wokers : </p><input type="fixed" name="" value=" xyz" style="width: 90px">
+            </div>
+            <div class="flex flexcardText">
+               <p>Soil Type :</p> <input type="fixed" name="" value=" xyz" style="width: 190px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Preferred Crops : </p><input type="fixed" name="" value=" xyz" style="width: 130px">
+            </div>
+            <div class="flex flexcardText">
+              <p>Required no of Expirence : </p><input type="fixed" name="" value=" xyz" style="width: 60px">
+            </div>
+            <div class="flex flexcardText">
+                <button style="border-color: black;">APPLY</button>
+            </div>
+        </div> -->
+
+    </section>
+
+
+
+</div>
+
+    <div id="footer" class="footer-main">
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <!-- <img src="images/logo.png" alt="" /> -->
+                                <img src="{{url_for('static', filename = 'lease/images/logo.png')}}" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>New Menu</h3>
+                                <ul>
+                                    <li><a href="#">Italian Bomba Sandwich</a></li>
+                                    <li><a href="#">Double Dose of Pork Belly</a></li>
+                                    <li><a href="#">Spicy Thai Noodles</a></li>
+                                    <li><a href="#">Triple Truffle Trotters</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>6 E Esplanade, St Albans VIC 3021, Australia</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+                  +91 80005 89080 
+                </span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@foodfunday.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Monday - Thursday </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>Friday - Saturday </p>
+                                        <span>  11:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune is powered by <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    <!-- ALL JS FILES -->
+    <!-- <script src="js/all.js"></script> -->
+    <script src="{{url_for('static', filename = 'lease/js/all.js')}}"></script>
+    <!-- <script src="js/bootstrap.min.js"></script>  -->
+    <script src="{{url_for('static', filename = 'lease/js/bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="{{url_for('static', filename = 'lease/js/custom.js')}}"></script>
+    <!-- <script src="assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="{{url_for('static', filename = 'lease/assets/vendor/jquery/jquery.min.js')}}"></script>
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!-- <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/php-email-form/validate.js')}}"></script>
+  <!-- <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+  <!-- <script src="assets/vendor/counterup/counterup.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/counterup/counterup.min.js')}}"></script>
+  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <!-- <script src="assets/vendor/venobox/venobox.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/venobox/venobox.min.js')}}"></script>
+  <!-- <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+  <!-- <script src="assets/vendor/typed.js/typed.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/typed.js/typed.min.js')}}"></script>
+  <!-- <script src="assets/vendor/aos/aos.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/vendor/aos/aos.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="{{url_for('static', filename = 'lease/assets/js/main.js')}}"></script>
+
+</body>
+
+</html>

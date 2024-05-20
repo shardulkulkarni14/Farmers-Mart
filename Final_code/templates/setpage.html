@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Food Funday Restaurant - One page HTML Responsive</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+
+    <link rel="shortcut icon"  type="image/x-icon" href="{{url_for('static', filename = 'images/favicon.ico')}}"/>
+
+    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename = 'images/apple-touch-icon.png')}}">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'blockchain/css/bootstrap.min.css')}}">
+
+    <!-- Site CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'blockchain/css/style.css')}}">
+   <!-- <link rel="stylesheet" href="css/try1.css"> -->
+   <link rel="stylesheet" href="{{url_for('static', filename = 'blockchain/css/try1.css')}}">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'blockchain/css/responsive.css')}}">
+    <!-- <link rel="stylesheet" href="css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'blockchain/css/try1.css')}}">
+    <!-- color -->
+    <!-- <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" /> -->
+    <link id="changeable-colors" rel="stylesheet" href="{{url_for('static', filename = 'blockchain/css/colors/orange.css')}}" />
+    <!-- <link href="https:/unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https:/unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" >
+
+    <!-- Modernizer -->
+    <!-- <script src="js/modernizer.js"></script> -->
+    <script src="{{url_for('static', filename = 'blockchain/js/modernizer.js')}}"></script>
+
+    <!-- <script src="https:/code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" src="https:/code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <!-- <script src="https:/cdn.ethers.io/lib/ethers-5.0.umd.min.js" charset="utf-8" type="text/javascript"></script> -->
+    <script charset="utf-8" type="text/javascript" src="https:/cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+</head>
+
+<body>
+    
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <!-- <img src="images/logo.png" alt=""> -->
+                                        <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#motto">Motto</a></li>
+                                    <li><a href="#suppliers">Suppliers</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#partners">Partners</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="#contact">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+
+  
+   
+    <!-- end banner https:/static.lumosity.com/resources/home_page_templates/574/neuralnetwork.mp4 -->
+
+<section id="banner">
+    <br>
+    <br>
+    <br>
+    <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+        <!-- <source src="videos/Black_Neuralnetwork.mp4" type="video/mp4"> -->
+            <source src="{{url_for('static', filename = 'blockchain/videos/Black_Neuralnetwork.mp4')}}" type="video/mp4">
+            <!-- <source src="movie.webm" type="video/webm">Sorry, your browser does not support HTML5 video.</video> -->
+            <source src="{{url_for('static', filename = 'movie.webm')}}" type="video/webm">Sorry, your browser does not support HTML5 video.</video>
+   <div id="getpage" class="menu-main pad-top-100 pad-bottom-100" >
+        <div class="container">
+            <div class="row">
+                <div >
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+                            Pushing Temperature Data
+                    </h2>
+                   
+                    <br>
+                        <!-- <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p> -->
+                    </div>
+                    
+                        
+                    <div class="container" >
+                        
+                        <div>
+                      
+                            <hr>
+                                <br>
+                                <form class="form">
+                                    
+                                <div>
+                                <label for="custid">Customer ID: </label>
+                                <input class="form-control" id="custid" type="text" required >
+                                </div>
+                    
+                                <div>
+                                <label for="pid">Package ID: </label>
+                                <input class="form-control"  id="pid" type="text" required>
+                                </div>
+                    
+                                <div >
+                                <label for="avgtemp">Average Temperature: </label>
+                                <input class="form-control"  id="temp" type="text" required>
+                                </div>
+                    
+                                <div>
+                                    <label for="message">Time</label>
+                                    <input class="form-control" id="time" type="text" required>
+                                </div>
+                    
+                            </form>
+                                <br>
+                                <button  class="btn-success" id="setMessageButton">Set secret message</button>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+                <br>
+              
+                    
+               
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div> 
+</section>
+<script>
+
+     //Connect a the web3 provider
+                
+    mnemonic = "piano dog deposit airport flag planet wool catch apple pet skill kite";
+        walletMnemonic = ethers.Wallet.fromMnemonic(mnemonic);
+
+        //walletPrivateKey = new ethers.Wallet(walletMnemonic.privateKey);
+
+        //alert(walletMnemonic.address === walletPrivateKey.address);
+        // true
+
+        /// The address as a Promise per the Signer API
+        walletMnemonic.getAddress();
+       // / { Promise: '0x71CB05EE1b1F506fF321Da3dac38f25c0c9ce6E1' }
+
+
+        console.log("Wallet Address: "+walletMnemonic.address);
+        //alert("Wallet Address: "+walletMnemonic.address);
+
+        //*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        var abi = [
+            {
+                "constant": true,
+                "inputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "_c_num",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "_p_id",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "fetchtransact",
+                "outputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "a",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "b",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "c",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "d",
+                        "type": "uint256"
+                    }
+                ],
+                "payable": false,
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "constant": false,
+                "inputs": [
+                    {
+                        "internalType": "uint256",
+                        "name": "_c_num",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "_p_id",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "_temp",
+                        "type": "uint256"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "_time",
+                        "type": "uint256"
+                    }
+                ],
+                "name": "newtransaction",
+                "outputs": [],
+                "payable": false,
+                "stateMutability": "nonpayable",
+                "type": "function"
+            }
+        ]
+
+        var cntradd = '0x902a15f07DbEA287C6DB5579ffB346c6668710CF';
+
+      
+        var provider = new ethers.providers.InfuraProvider("rinkeby", '023e22764cb642ad964efa7d8d404f3e');
+
+
+        var wallet = walletMnemonic.connect(provider);
+
+        var RemixContract = new ethers.Contract( cntradd , abi , wallet);
+
+        console.log(RemixContract);
+
+		$("#setMessageButton").click(function () {
+			custid1 = $("#custid").val();
+			pid1 = $("#pid").val();
+			temp1= $("#temp").val();
+            time1 = $("#time").val();
+            
+            RemixContract.newtransaction(custid1,pid1,temp1,time1).then(function(transaction){
+            console.log(transaction);
+            alert("Sent");
+            return transaction;
+            });
+
+            console.log($("#temp").val());
+        });
+		
+</script>
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <!-- <img src="images/logo.png" alt="" /> -->
+                                <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>New Menu</h3>
+                                <ul>
+                                    <li><a href="#">Italian Bomba Sandwich</a></li>
+                                    <li><a href="#">Double Dose of Pork Belly</a></li>
+                                    <li><a href="#">Spicy Thai Noodles</a></li>
+                                    <li><a href="#">Triple Truffle Trotters</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>6 E Esplanade, St Albans VIC 3021, Australia</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+									+91 80005 89080 
+								</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@foodfunday.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Monday - Thursday </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>Friday - Saturday </p>
+                                        <span>  11:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune is powered by <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color Scheme</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+    <!-- ALL JS FILES -->
+    <!-- <script src="js/all.js"></script> -->
+    <script src="{{url_for('static', filename = 'blockchain/js/all.js')}}"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="{{url_for('static', filename = 'blockchain/js/bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="{{url_for('static', filename = 'blockchain/js/custom.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Farmers Mart</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- <link rel="shortcut icon" href="{{url_for('static', filename = 'cartt/images/favicon.ico')}}" type="image/x-icon" /> -->
+    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename = 'cartt/images/apple-touch-icon.png')}}">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'cartt/css/bootstrap.min.css')}}">
+    <!-- Site CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'cartt/css/style.css')}}">
+   <!-- <link rel="stylesheet" href="css/try1.css"> -->
+   <link rel="stylesheet" href="{{url_for('static', filename = 'cartt/css/try1.css')}}">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'cartt/css/responsive.css')}}">
+<!-- <link rel="stylesheet" href="css/try1.css"> -->
+<link rel="stylesheet" href="{{url_for('static', filename = 'cartt/css/try1.css')}}">
+    <!-- color -->
+    <!-- <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" /> -->
+    <link id="changeable-colors" rel="stylesheet" href="{{url_for('static', filename = 'cartt/css/colors/orange.css')}}" />
+    <link href="https:/unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Modernizer -->
+    <!-- <script src="js/modernizer.js"></script> -->
+    <script src="{{url_for('static', filename = 'cartt/js/modernizer.js')}}"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https:/oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https:/oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- <link rel="stylesheet" href="css/mystyle.css"> -->
+  <link rel="stylesheet" href="{{url_for('static', filename = 'cartt/css/mystyle.css')}}">
+	<style>
+body {
+  background-image: url('static/images/sonja.jpeg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<script src="https:/ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<center>
+<body>
+	
+ <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <!-- <img src="images/logo.png" alt=""> -->
+                                        <img src="static/indexx/images/lOGOO.png" alt="" style="margin-right: 10px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#suppliers">Suppliers</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#partners">Partners</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="#contact">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+
+
+
+  <section>
+    <div class="">
+      <div class="row">
+        <div class="col-lg-6  col-lg-12">
+          <div class="shopping-cart">
+            <!-- Title -->
+            <div class="title" style="color: black"> <center><b>My Shopping Cart</b></center>
+            </div>
+            <!-- Product #1 -->
+            <div class="item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="image">
+                      <center><img src="{{url_for('static', filename = 'cartt/img/ap.png')}}" alt="" style="height :  100px; width: 100px" /></center>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="description">
+                      <span>Apple</span>
+                      <span>Farmer 3</span>
+                      <span>2 Dozen</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="quantity">
+                      <button class="plus-btn" type="button" name="button">
+                        <img src="{{url_for('static', filename = 'cartt/img/plus.png')}}" alt="" class="center"/>
+                      </button>
+                      <input type="text" name="name" value="1">
+                      <button class="minus-btn" type="button" name="button">
+                        <img src="{{url_for('static', filename = 'cartt/img/mi.png')}}" alt="" class="center"/>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="total-price">Rs-200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product #2 -->
+            <div class="item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="image">
+                      <center><img src="{{url_for('static', filename = 'cartt/img/on.png')}}" alt="" style="height :  100px; width: 100px" /></center>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="description">
+                      <span>Onion</span>
+                      <span>Farmer 3</span>
+                      <span>1 Kg</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="quantity">
+                      <button class="plus-btn" type="button" name="button">
+                        <img src="{{url_for('static', filename = 'cartt/img/plus.png')}}" alt="" class="center"/>
+                      </button>
+                      <input type="text" name="name" value="1">
+                      <button class="minus-btn" type="button" name="button">
+                        <img src="{{url_for('static', filename = 'cartt/img/mi.png')}}" alt="" class="center"/>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="total-price">Rs-200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product #3 -->
+            <div class="item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="image">
+                      <center><img src="{{url_for('static', filename = 'cartt/img/bri.png')}}" alt="" style="height :  100px; width: 100px" /></center>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="description">
+                      <span> Brinjal </span>
+                      <span>Farmer 1</span>
+                      <span>1 Kg</span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="quantity">
+                      <button class="plus-btn" type="button" name="button">
+                        <img src="{{url_for('static', filename = 'cartt/img/plus.png')}}" alt="" class="center"/>
+                      </button>
+                      <input type="text" name="name" value="1">
+                      <button class="minus-btn" type="button" name="button">
+                        <img src="{{url_for('static', filename = 'cartt/img/mi.png')}}" alt="" class="center"/>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="total-price">Rs-200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="shopping-cart1 " >
+            <!-- Title -->
+            <div class="title" style="color: black"> <center><b>Billing Details</b></center>
+            </div>
+            <div class="item2">
+              <ul>
+                <li>
+                  <label style="width: 100px; color: black">Name : </label><input type="fixed" name="" value="{{name_user}}" style="width: 120px;color: black">
+                </li>
+                <li>
+                  <label style="width: 150px; text-align: center;color: black">Billing Address : </label><input type="text" name="" value="{{address}}" placeholder="1st line" style="width: 270px"><br>
+                 
+                </li>
+                <li>
+                  <label style="width: 180px; text-align: center;color: black">Shipping Address : </label><input type="text" name="" value="" placeholder="1st line" style="width: 200px"><br>
+                  
+                </li>
+                <li>
+                  <label style="width: 180px;color: black">Total Amount : </label>
+                  <input type="text" name="" value="₹. {{amount}}" style="width:80px;color: black">
+                </li>
+                <li>
+                  <label style="width: 130px;color: black">Promo Code : </label>
+                  <input type="text" name="" value="{{promocode}}" style="width:120px" placeholder="XXXXXXX">
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex justify-content-end">
+              <div class="text-right">
+                <button style="margin: 10px; font-size: 24px; border-radius: 10px; border-color: black; border:2px; size: 50px;color: black"><img src="{{url_for('static', filename = 'cartt/img/check.png')}}" style="height: 50px;  width: 50px;">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div id="footer" class="footer-main">
+       
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Our platform aims to empower the farmers by eradicating middlemen who take away a lion's share of commission.</p>
+                                
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Shop</h3>
+                                <ul>
+                                    <li><a href="#">Fruits and Vegetables</a></li>
+                                    <li><a href="#">Dairy Product</a></li>
+                                    <li><a href="#">Stuble</a></li>
+                                    <li><a href="#">Fertilizers for Farmers</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>DYPIEMR, Akurdi, Pune-411044, Maharashtra, India</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+                  +91 9491655317 
+                </span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">sihfortune06@gmail.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Our Motto</h3>
+
+                                <p> We aim to enable our farmers to get their maximum share in the truest form by incorporating innovative technological solutions in agriculture.  
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune  <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+<a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color Scheme</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+<!-- <script src="js/deco.js" type="text/javascript"> </script> -->
+<script src="{{url_for('static', filename = 'cartt/js/deco.js')}}" type="text/javascript"> </script>
+<!-- <script src="js/all.js"></script> -->
+<script src="{{url_for('static', filename = 'cartt/js/all.js')}}"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="{{url_for('static', filename = 'cartt/js/bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="{{url_for('static', filename = 'cartt/js/custom.js')}}"></script>
+
+</body>
+</center>
+</html>

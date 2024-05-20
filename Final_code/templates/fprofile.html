@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Site Metas -->
+    <title>Farmers mart</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <!-- <link rel="shortcut icon" href="profile/images/favicon.ico" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'profile/images/favicon.ico')}}" type="image/x-icon" />
+    <!-- <link rel="apple-touch-icon" href="profile/images/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename = 'profile/images/apple-touch-icon.png')}}">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/bootstrap.min.css')}}">
+    <!-- Site CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/style.css')}}">
+   <!-- <link rel="stylesheet" href="css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/try1.css')}}">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/responsive.css')}}">
+    <!-- <link rel="stylesheet" href="css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/try1.css')}}">
+    <!-- color -->
+    <!-- <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" /> -->
+    <link id="changeable-colors" rel="stylesheet" href="{{url_for('static', filename = 'profile/css/colors/orange.css')}}" />
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- <script src="js/modernizer.js"></script> -->
+        <script src="{{url_for('static', filename = 'js/modernizer.js')}}"></script>
+        <!-- vendor -->
+        <!-- <link rel="stylesheet" type="text/css" href="profile/assets/vendor/aos/aos.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'profile/assets/vendor/aos/aos.css')}}">
+          <!-- <link href="profile/assets/vendor/icofont/icofont.min.css" rel="stylesheet"> -->
+          <link href="{{url_for('static', filename = 'profile/assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          
+
+
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <!-- <img src="profile/images/logo.png" alt=""> -->
+                                        <img src="static/indexx/images/lOGOO.png" alt="" style="margin-right: 10px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#profile">Profile</a></li>
+                                    <li><a href="#price">Future Price Pridiction</a></li>
+                                    <li><a href="#growth">Crop Score Report</a></li>
+                                    <li><a href="#offer">Offers/Discounts</a></li>
+                                    <li><a href="farmerfeed">Feed</a></li>
+                                    <li><a href="cart"> Cart </a></li>
+                                    <li><a href="{{url_for('login')}}">Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+	
+
+
+<div style="background-image: url(static/profile/images/banner.jpg);background-repeat: no-repeat;background-position:center;background-attachment: fixed;background-size: 100%;">
+
+    <!-- ======= Profile Section ======= -->
+    <section id="profile" class="about">
+        <div class="container">
+          <div class="row" style="margin-top: 50px">
+              <div class="col-lg-3" style="margin-top: 50px">
+                <!-- <img src="profile/assets/img/profile-img.jpg" style="height: 300px;width: 300px;border-radius: 250px;"> -->
+                <img src="{{url_for('static', filename = 'indexx/images/farm.png')}}" style="height: 300px;width: 300px;border-radius: 250px;">
+              </div>
+              <div class="col-lg-6 pt-lg-0 content" data-aos="fade-left">
+                <div class="section-title" style="margin-top: 50px">
+                  <h2>Profile :</h2>
+                </div>
+                <ul>
+                    <li><i class="icofont-rounded-right"></i>
+                    <label><strong>NAME :</strong></label><input type="text" name="name" class="profile" value="{{name}}">
+                    <li><i class="icofont-rounded-right"></i>
+                    <label><strong>ADDRESS :</strong><label><input type="text" name="add" class="profile" value="{{address}}">
+                    <li><i class="icofont-rounded-right"></i>
+                    <label><strong>Phone :</strong></label><input type="text" name="phn" class="profile" value="{{phone}}">
+                    <li><i class="icofont-rounded-right"></i>
+                    <label><strong>No. of Crops Produced :</strong><label><input type="nocrp" name="add" class="profile" value="3">
+                </ul>
+              </div> 
+            
+          </label>
+        </div>
+    </section>
+    <!-- End Profile Section -->    
+
+    <!-- ======= Price Section ======= -->
+    <section id="price" class="skills section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Price rate for next week : </h2>
+          <p style="font-size: 22px">Crop Name</p>
+          <form method="POST">
+            <select name="cropnames" id="cropname" style="color: black; font-size: 18px">
+                 <option value="Rose"  style="color: black;" >Rose</option>
+                  <option value="Bajra"  style="color: black;">Bajra</option>
+                <option value="Barley"  style="color: black;">Barley</option>
+                <option value="Mango" style="color: black;">Mango</option>
+                 <option value="Marigold" style="color: black;">Marigold</option>
+            </select>
+            <button type="submit" name="submit" value="crop_price" class="button_confirm" style=" border: none;display: inline-flex;height: 40px;width: 180px;align-items: center;color: #fff;cursor: pointer;background: #8eb852;text-transform: uppercase;justify-content: center;letter-spacing: 1px;font-size: 15px;border-radius: 3px;">Check the graph</button>
+            </form>
+        </div>
+      </div>
+    </section>
+   <div class="container" style="background: white;">
+          <canvas id="myChart"></canvas>
+  </div>
+    
+  
+
+    <section id="price" class="skills section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Price rate for next week : </h2>
+          <p style="font-size: 22px">Crop Name</p>
+          <form method="POST">
+            <select name="cropname" id="cropname" style="color: black; font-size: 18px">
+                 <option value="rice"  style="color: black;" >Rice</option>
+                  <option value="Mustard"  style="color: black;">Mustard</option>
+                <option value="green_chillies"  style="color: black;">Green Chillies</option>
+                <option value="green_peas" style="color: black;">Green Peas</option>
+            </select>
+            <button type="submit" name="submit" value="submit" class="button_confirm" style=" border: none;display: inline-flex;height: 40px;width: 180px;align-items: center;color: #fff;cursor: pointer;background: #8eb852;text-transform: uppercase;justify-content: center;letter-spacing: 1px;font-size: 15px;border-radius: 3px;">Check the prize</button>
+            </form>
+        </div>
+        <table>
+          <tr>
+            <th width="200px;">Date</th>
+            <th>Rate</th>
+          </tr>
+            {% for item in ricee %}
+    <tr>
+            <th><input type="" name="monnval" value="{{item[0]}}" class="tablein"></th>
+            <th><input type="text" name="monnval" value="{{item[1]}}{{"/kg"}}" class="tablein"></th>
+          </tr>
+{% endfor %}
+        
+          
+        </table>
+      </div>
+<div class="container" style="background: white;">
+    <canvas id="myCharts"></canvas>
+  </div>
+    </section>
+    <!-- End Price Section -->
+
+   
+ <section id="farm" class="section">
+       <div class="container">
+          <div class="section-title" >
+          <h2>Crop score</h2>
+        </div>
+        <div class="row">
+          
+       {% for item in total_score %}
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="{{item[2]}}" alt="Person" class="card__image">
+               
+              <form method="POST">
+               <input type="text" class="card__name" value="{{item[0]}}" name="farmername"  style="margin-left: 140px;">
+             <!--  <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 40px;">Crop Name :</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-20px;">
+                    <input type="text" value="{{item[1]}}" name="cropname" style="font-size: 20px;"  >
+                 </div> 
+              </div> -->
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 50px;">Crop Score :</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-50px;">
+                    <input type="text" value="{{item[1]}}{{"/5"}}" name="cropscore" style="font-size: 20px;" >
+                 </div> 
+              </div>
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 120px;">Rs:</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-50px;">
+                    <input type="text" value="{{item[3]}}{{"/kg"}}" name="price"  style="font-size: 20px;" >
+                 </div> 
+              </div>
+                <center><button type="submit" name="submit" value="update" href="{{url_for('updateorder')}}" >Update price</button></center>   
+              </form>
+               
+              
+            </div>
+          </div>
+          {% endfor %}
+          
+    
+          
+        
+        </div>
+       </div>
+     </section>
+    <!-- ======= Growth Section ======= -->
+   
+    <!-- End Growth Section -->
+ 
+       
+   <section id="lease" class="portfolio section">
+        <div class="container">
+            <div class="section-title">
+                <h2 style=" color: white">Give For Lease :</h2>
+            </div>
+            <div class="row" style=" height:500px;border-color: white; border-width: 2px; border-radius:25px; background:url(static/indexx/images/unnamed.gif); background-repeat: no-repeat;background-size:cover">
+              <form method="POST">
+                
+              
+                    <div class="col-lg-6 col-lg-12" style="margin-top: 30px">
+                        <ul>
+                            <li>
+                                <label for="" style="color: black">Land Location : </label>
+                                <input type="text" name="land_location" style="color: black;font-size: 16px;border-radius:10px ; background-color: #8FBC8F">
+                            </li>
+                            <li>
+                                <label for="" style="color: black">Area of land : </label>
+                                <input type="number" name="area_land" style="color: black;font-size: 16px; width: 60px; border-radius:10px ; background-color: #8FBC8F">
+                                <select name="dist" id="" style="color: black; width: 120px;border-radius:10px ; background-color: #8FBC8F">
+                                <option value="Sqft" style="color: black;">Sqft</option>
+                                <option value="Acre" style="color: black;">Acre</option>
+                                <option value="Yard" style="color: black;">Yard</option>
+                        
+                            </select>
+                            </li>
+                            <li>
+                                <label for="" style="color: black">Required no of workers : </label>
+                                <input type="number" name="workers" style="color: black;font-size: 16px; width: 100px; border-radius:10px ; background-color: #8FBC8F">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-lg-12"  style="margin-top: 20px;">
+                        <ul>
+                            <li><label for="" style="color: black">Soil Type : </label>
+                                <select name="type_soil" id="" style="color: black; width: 120px; border-radius:10px ; background-color: #8FBC8F">
+                                <option value="Loamy sand" style="color: black;">Loamy Soil</option>
+                                <option value="Fertile" style="color: black;">Fertile</option>
+                                <option value="Clay" style="color: black;">Clay</option>
+                                <option value="Black" style="color: black;">Black</option>
+                                <option value="Heavy" style="color: black;">Heavy</option>
+                                <option value="Sandy" style="color: black;">Sandy</option>
+                            </select>
+                            </li>
+                            <li><label for="" style="color: black">Preferred Crops : </label>
+                                <input type="checkbox" id="crop" name="vehicle1" value="Soyabean" style="width:30px;"><label style="color: black">Soyabean</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="crop" name="vehicle1" value="Peas" style="width: 30px"><label style="color: black">Peas</label>
+                                <input type="checkbox" id="crop" name="vehicle1" value="Cotton" style="width:30px;"><label style="color: black">Cotton</label>
+                                <input type="checkbox" id="crop" name="vehicle1" value="Sugarcane" style="width: 30px"><label  style="color: black">Sugarcane</label>
+                            </li>
+                            <li>
+                                <label for="" style="color: black">Required no of Experience : </label>
+                                <input type="number" name="experience" style="color: black;font-size: 16px; width: 150px; border-radius:10px ; background-color: #8FBC8F">
+                            </li>
+                        </ul>
+                    </div>
+                <center><button class="but1" type="submit" name="submit" value="upload_lease" style="margin-top: 20px">Upload</button></center>
+                </form>
+            </div>
+        </div>
+    </section>  
+</div>
+
+    <div id="footer" class="footer-main">
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <!-- <img src="profile/images/logo.png" alt="" /> -->
+                                <img src="{{url_for('static', filename = 'profile/images/logo.png')}}" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes. 
+                            </p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>New Menu</h3>
+                                <ul>
+                                    <li><a href="#">Italian Bomba Sandwich</a></li>
+                                    <li><a href="#">Double Dose of Pork Belly</a></li>
+                                    <li><a href="#">Spicy Thai Noodles</a></li>
+                                    <li><a href="#">Triple Truffle Trotters</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>6 E Esplanade, St Albans VIC 3021, Australia</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+									+91 80005 89080 
+								</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@foodfunday.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Monday - Thursday </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>Friday - Saturday </p>
+                                        <span>  11:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune is powered by <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+<script type="text/javascript">
+                                 
+                              </script>
+  <script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+ var a=[];
+ var b=[];
+ var c =[];
+ var d=[];
+                                  {% for item in graph_crop %}
+                                  
+                                    
+                                d.push("{{item[0]}}")
+                                a.push("{{item[1]}}");
+                                b.push("{{item[2]}}");
+                                c.push("{{item[3]}}");    
+                              {% endfor %}
+                              console.log(a)
+    // Global Options
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+
+    let massPopChart = new Chart(myChart, {
+      type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+      data:{
+          
+
+        labels:a,
+        datasets:[{
+          label:'Sold Price',
+          backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+             'rgba(255, 99, 132, 0.6)',
+              'rgba(255, 99, 132, 0.6)',
+               'rgba(255, 99, 132, 0.6)',
+                'rgba(255, 99, 132, 0.6)',
+                 'rgba(255, 99, 132, 0.6)',
+                  'rgba(255, 99, 132, 0.6)'
+          ],
+          data:b
+        },
+          {
+            label: 'Market Price',
+            backgroundColor:[
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(54, 162, 235, 0.6)'
+
+          ],
+            data:c
+          // }
+          // //backgroundColor:'green',
+          // borderWidth:1,
+          // borderColor:'#777',
+          // hoverBorderWidth:3,
+          // hoverBorderColor:'#000'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'Date wise Report {{crop_d}}',
+          fontSize:25
+        },
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'#000'
+          }
+        },
+        scales: {
+        xAxes: [ {
+          // type: 'time',
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Date'
+          }
+        } ],
+        yAxes: [ {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Price'
+          }
+        } ]
+      },
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },
+        tooltips:{
+          enabled:true
+        }
+      }
+    });
+  </script>
+  <script>
+    var ad=[];
+ var bd=[];
+ {% for item in ricee %}
+     ad.push("{{item[0]}}");
+     bd.push("{{item[1]}}");
+   {% endfor %}
+   console.log(ad);
+   console.log(bd);
+   
+    let myCharts = document.getElementById('myCharts').getContext('2d');
+
+    // Global Options
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 18;
+    Chart.defaults.global.defaultFontColor = '#777';
+
+    let massPopCharts = new Chart(myCharts, {
+      type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+      data:{
+        labels:a,
+        datasets:[{
+          label:'Price',
+          backgroundColor:[
+            // 'rgba(255, 99, 132, 0.6)',
+            // 'rgba(54, 162, 235, 0.6)',
+            // 'rgba(255, 206, 86, 0.6)',
+            // 'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            // 'rgba(255, 159, 64, 0.6)',
+            // 'rgba(255, 99, 132, 0.6)'
+          ],
+          data:b
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'Price chart',
+          fontSize:25
+        },
+         // responsive: true,
+      scales: {
+        xAxes: [ {
+          // type: 'time',
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Date'
+          }
+        } ],
+        yAxes: [ {
+          display: true,
+          scaleLabel: {
+            display: true,
+            labelString: 'Price'
+          }
+        } ]
+      },
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'#000'
+          }
+        },
+
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },
+        tooltips:{
+          enabled:true
+        }
+      }
+    });
+  </script>
+   <script type="text/javascript">
+            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+            (function(d, m){
+              var kommunicateSettings = {"appId":"258b148ca7ddef794193519f0e233efd6","popupWidget":true,"automaticChatOpenOnNavigation":true};
+              var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+              s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+              var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+              window.kommunicate = m; m._globals = kommunicateSettings;
+            })(document, window.kommunicate || {});
+        </script>
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    <!-- ALL JS FILES -->
+    <!-- <script src="js/all.js"></script> -->
+    <script src="{{url_for('static', filename = 'js/all.js')}}"></script>
+    <!-- <script src="js/bootstrap.min.js"></script>  -->
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="{{url_for('static', filename = 'js/custom.js')}}"></script>
+    <!-- <script src="profile/assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="{{url_for('static', filename = 'profile/assets/vendor/jquery/jquery.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/php-email-form/validate.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/waypoints/jquery.waypoints.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/counterup/counterup.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/counterup/counterup.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/venobox/venobox.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/venobox/venobox.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/owl.carousel/owl.carousel.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/typed.js/typed.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/typed.js/typed.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/aos/aos.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/aos/aos.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="profile/assets/js/main.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/js/main.js')}}"></script>
+
+</body>
+
+</html>

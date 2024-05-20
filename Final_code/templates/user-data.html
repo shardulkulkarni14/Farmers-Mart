@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	 <script src="{{url_for('static', filename = 'blockchain/js/modernizer.js')}}"></script>
+
+    <!-- <script src="https:/code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" src="https:/code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <!-- <script src="https:/cdn.ethers.io/lib/ethers-5.0.umd.min.js" charset="utf-8" type="text/javascript"></script> -->
+    <script charset="utf-8" type="text/javascript" src="https:/cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+
+
+</head>
+<body>
+<button  class="btn-success" id="setMessageButton">Set secret message</button>
+
+
+<script>
+	mnemonic = "next lounge advance flat party turn hill fat exercise turn shiver penalty";
+        walletMnemonic = ethers.Wallet.fromMnemonic(mnemonic);
+
+        //walletPrivateKey = new ethers.Wallet(walletMnemonic.privateKey);
+
+        //alert(walletMnemonic.address === walletPrivateKey.address);
+        // true
+
+        /// The address as a Promise per the Signer API
+        walletMnemonic.getAddress();
+       // / { Promise: '0x71CB05EE1b1F506fF321Da3dac38f25c0c9ce6E1' }
+
+
+        console.log("Wallet Address: "+walletMnemonic.address);
+        //alert("Wallet Address: "+walletMnemonic.address);
+
+        //*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        var abi = [
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_c_num",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_p_id",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_temp",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_time",
+				"type": "string"
+			}
+		],
+		"name": "newtransaction",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_c_num",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_p_id",
+				"type": "string"
+			}
+		],
+		"name": "fetchtransact",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "a",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "b",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "c",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "d",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+        var cntradd = '0x43BBdB75a15657d08c78B748E716CfF237099aC9';
+
+      
+        var provider = new ethers.providers.InfuraProvider("rinkeby", '023e22764cb642ad964efa7d8d404f3e');
+
+
+        var wallet = walletMnemonic.connect(provider);
+
+        var RemixContract = new ethers.Contract( cntradd , abi , wallet);
+
+        console.log(RemixContract);
+        	
+//console.log(curr_time);
+
+// Temperature
+				
+				var va = "{{packing_id}}";
+				console.log(va.toString());
+				console.log("{{temp}}");
+			console.log("{{time}}");
+				var em =  "{{email_id}}";
+var tem = "{{temp}}";
+var time2 = "{{time}}";
+		$("#setMessageButton").click(function () {
+
+			custid1 =em.toString();
+			
+			pid1 = va.toString();
+			temp1= tem.toString();
+            time1 = time2.toString();
+       
+            var aa = RemixContract.newtransaction(custid1,pid1,temp1,time1).then(function(transaction){
+            console.log(transaction);
+            alert("Sent");
+            return transaction;
+            });
+            console.log(aa);
+            
+        });
+
+
+
+</script>
+ <script type="text/javascript">
+            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+            (function(d, m){
+              var kommunicateSettings = {"appId":"258b148ca7ddef794193519f0e233efd6","popupWidget":true,"automaticChatOpenOnNavigation":true};
+              var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+              s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+              var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+              window.kommunicate = m; m._globals = kommunicateSettings;
+            })(document, window.kommunicate || {});
+        </script>
+<script src="{{url_for('static', filename = 'blockchain/js/all.js')}}"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename = 'blockchain/js/bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="js/custom.js"></script> -->
+<script src="{{url_for('static', filename = 'blockchain/js/custom.js')}}"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Site Metas -->
+    <title>Food Funday Restaurant - One page HTML Responsive</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'images/favicon.ico')}}" type="image/x-icon" />
+    <!-- <link rel="apple-touch-icon" href="images/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename = 'images/apple-touch-icon.png')}}">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css')}}">
+    <!-- Site CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+   <!-- <link rel="stylesheet" href="css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/try1.css')}}">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/responsive.css')}}">
+    <!-- <link rel="stylesheet" href="css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/try1.css')}}">
+    <!-- color -->
+    <!-- <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" /> -->
+    <link id="changeable-colors" rel="stylesheet" href="{{url_for('static', filename = 'css/colors/orange.css')}}" />
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- <script src="js/modernizer.js"></script> -->
+        <script src="{{url_for('static', filename = 'js/modernizer.js')}}"></script>
+        <!-- vendor -->
+        <!-- <link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'assets/vendor/aos/aos.css')}}">
+          <!-- <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet"> -->
+          <link href="{{url_for('static', filename = 'assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+
+          
+
+<style type="text/css">
+    .tablescrp{
+  margin-top: 20px;
+  color: black;
+  font-size: 15px;
+}
+</style>
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <!-- <img src="images/logo.png" alt=""> -->
+                                        <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#profile">Profile</a></li>
+                                    <li><a href="#post">Post</a></li>
+                                    <li><a href="#offer">Offers/Discounts</a></li>
+                                    <li><a href="#farm">Farmer Scores</a></li>
+                                    <li><a href="#crop">Crop Scores </a></li>
+                                    <li><a href="cfeed.html">Feed</a></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+  <!-- end site-header -->
+	
+
+
+<div style="background-image: url(static/images/banner.jpg);background-repeat: no-repeat;background-position:center;-webkit-background-size: cover;
+background-attachment: fixed;
+background-size: cover;">
+    
+    <!-- Post Section -->
+    <section id="post" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="margin-top: 150px; color: white">Post Your Material:</h2>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for="Crop_name">Crop Name :</label>
+                            <select name="cropname" id="cropname" style="color: black; width: 120px">
+                                <option>Rice</option>
+                                <option>Barley</option>
+                                <option>Cotton</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Quantity :</label>
+                            <input type="number" name="quantity" class="post" style="color: black;background-color: white;width: 145px">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="unit">Unit :</label>
+                            <select name="unit" id="unit" style="color: black;width: 150px">
+                                <option>Kg</option>
+                                <option>Dozen</option>
+                                <option>ton</option>
+                            </select><br>
+                        </div>
+                    </div>
+                    <center><button class="but1">Post</button></center>
+                </div>
+            </div>
+    </section>
+    <!-- End post section -->
+
+    <!-- ======= Offer Section ======= -->
+    <section id="offer" class="portfolio section">
+        <div class="container">
+            <div class="section-title">
+            <h2>Offers/ Fertilizer Discounts</h2>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters" style="">
+                        <li data-filter="*" class="filter-active">All </li>
+                        <li data-filter=".filter-fv">Fruits/Vegetables</li>
+                        <li data-filter=".filter-gr">Grains</li>
+                        <li data-filter=".filter-fer">Fertilizers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-fv">
+                    <div class="portfolio-wrap">
+                    <img src="static/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title="fv 1"><i class="bx bx-plus">+</i></a>
+                        <a href="" title="More Details"><center><h2>25/kg</h2></center></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fer">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-2.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>102/pack</h3></center></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fv">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-3.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>52/kg</h3></center></a>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-lg-4 col-md-6 portfolio-item filter-gr">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-4.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>112/kg</h3></center></a>                        
+                    </div>
+                </div> 
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fer">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-5.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>105/pack</h3></center></a>
+                    </div>
+                </div>
+            </div>          
+            <div class="col-lg-4 col-md-6 portfolio-item filter-fv">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-6.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>55/kg</h3></center></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-4 col-md-6 portfolio-item filter-gr">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-7.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>67/kg</h3></center></a>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-lg-4 col-md-6 portfolio-item filter-gr">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-8.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>71/kg</h3></center></a>
+                    </div>
+                </div>
+            </div> 
+           <div class="col-lg-4 col-md-6 portfolio-item filter-fv">
+                <div class="portfolio-wrap">
+                    <img src="{{url_for('static', filename = 'assets/img/portfolio/portfolio-9.jpg')}}" class="img-fluid" alt="" style="height: 250px;width: 400px">
+                    <div class="portfolio-links">
+                        <a href="" title=""><i class="bx bx-plus"></i>+</a>
+                        <a href="" title="More Details"><center><h3>51/kg</h3></center></a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!-- End Offer Section -->
+
+    <!-- ======= farmer score Section ======= -->
+    <section id="farm" class="section">
+       <div class="container">
+          <div class="section-title" >
+          <h2>Farmer Scores</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              <p class="card__name">Lily-Grace Colley</p>
+              <div class="grid-container">
+                <div class="grid-child-posts">
+                  Rice
+                </div>
+                <div class="grid-child-followers">
+                  4.5/5
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
+    <!-- End farmer Section -->
+
+    <!-- ======= Crop score Section ======= -->
+    <section id="crop" class="section">
+       <div class="container">
+          <div class="section-title" >
+          <h2>Crop Scores</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+            <center><div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name : </th>
+                    <th> ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div></center>
+          </div>
+          <center><div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name : </th>
+                    <th> ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name: </th>
+                    <th>ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name : </th>
+                    <th> ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name : </th>
+                    <th> ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name : </th>
+                    <th> ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="property-card">
+              <div class="property-image" style="background-image: url(static/assets/img/portfolio/portfolio-1.jpg);">
+                <div class="property-image-title">
+                </div>
+              </div>
+              <div class="property-description">
+                <table class="tablescrp">
+                  <tr>
+                    <th>Farmer name : </th>
+                    <th> ABC</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score :</th>
+                    <th>4.2/5</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End crop score Section --> 
+    </div>
+
+    <div id="footer" class="footer-main">
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+                                <!-- <img src="images/logo.png" alt="" /> -->
+                                <img src="{{url_for('static', filename = 'images/logo.png')}}" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Aenean commodo ligula eget dolor aenean massa. Cum sociis nat penatibu set magnis dis parturient montes.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>New Menu</h3>
+                                <ul>
+                                    <li><a href="#">Italian Bomba Sandwich</a></li>
+                                    <li><a href="#">Double Dose of Pork Belly</a></li>
+                                    <li><a href="#">Spicy Thai Noodles</a></li>
+                                    <li><a href="#">Triple Truffle Trotters</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>6 E Esplanade, St Albans VIC 3021, Australia</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+                  +91 80005 89080 
+                </span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">support@foodfunday.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Opening Hours</h3>
+
+                                <ul>
+                                    <li>
+                                        <p>Monday - Thursday </p>
+                                        <span> 11:00 AM - 9:00 PM</span>
+                                    </li>
+                                    <li>
+                                        <p>Friday - Saturday </p>
+                                        <span>  11:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune is powered by <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    <!-- ALL JS FILES -->
+    <!-- <script src="js/all.js"></script> -->
+    <script src="{{url_for('static', filename = 'js/all.js')}}"></script>
+    <!-- <script src="js/bootstrap.min.js"></script>  -->
+    <script src="{{url_for('static', filename = 'js/bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="js/custom.js"></script> -->
+    <script src="{{url_for('static', filename = 'js/custom.js')}}"></script>
+    <!-- <script src="assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="{{url_for('static', filename = 'assets/vendor/jquery/jquery.min.js')}}"></script>
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!-- <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/php-email-form/validate.js')}}"></script>
+  <!-- <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+  <!-- <script src="assets/vendor/counterup/counterup.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/counterup/counterup.min.js')}}"></script>
+  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <!-- <script src="assets/vendor/venobox/venobox.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/venobox/venobox.min.js')}}"></script>
+  <!-- <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+  <!-- <script src="assets/vendor/typed.js/typed.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/typed.js/typed.min.js')}}"></script>
+  <!-- <script src="assets/vendor/aos/aos.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/aos/aos.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/js/main.js')}}"></script>
+
+</body>
+
+</html>

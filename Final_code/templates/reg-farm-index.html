@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Icons -->
+    <title>Farmers mart</title>
+    <link rel="shortcut icon" href="static/login/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="static/login/images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/login/css/rest-css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="static/login/css/rest-css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="static/login/css/rest-css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="static/login/css/rest-css/colors/orange.css" />
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+        <!-- DATE-PICKER -->
+    <link rel="stylesheet" href="static/login/css/date-picker/css/datepicker.min.css">
+
+        <!-- STYLE CSS -->
+    <link rel="stylesheet" href="static/login/css/rest-css/reg-farm-style.css">
+
+    <!-- Modernizer -->
+    <script src="static/login/js//login/modernizer.js"></script>
+
+</head>
+
+ <body style="background: url(https://kirkmarket.ky/wp-content/uploads/2017/03/slide_survey.jpg);  background-attachment: fixed;background-size: cover; background-repeat: no-repeat;">
+     <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu"> 
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                       <img src="static/indexx/images/lOGOO.png" alt="" style="margin-right: 10px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#menu">Menu</a></li>
+                                    <li><a href="#our_team">Team</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                    <li><a href="#pricing">pricing</a></li>
+                                    <li><a href="#reservation">Reservaion</a></li>
+                                    <li><a href="#footer">Contact us</a></li>
+                                </ul>
+                            </div>
+                             <!-- end nav-collapse -->
+                         </nav> 
+                        <!-- end navbar -->
+                     </div>
+                </div> 
+                <!-- end row -->
+             </div> 
+            <!-- end container-fluid -->
+         </header> 
+        <!-- end header -->
+     </div> 
+	<!-- end site-header -->
+
+    <body style="background: url(static/login/images/banner.jpg); background-size: cover;">
+        <div class="wrapper">
+            <form method="POST" id="wizard">
+                <h4></h4>
+                <section>
+                    <h3 style="color: white;">Basic details</h3>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-account"></i>
+                            <input type="text" name="Fname" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-account"></i>
+                            <input type="text" name="Lname" class="form-control" placeholder="Last Name">
+                        </div>
+                       
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-map"></i>
+                                <input type="text" name="Country" class="form-control" placeholder="Country">
+                            </div>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-pin-drop"></i>
+                                <input type="text" name="State" class="form-control" placeholder="State">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-pin"></i>
+                                <input type="text" name="City" class="form-control" placeholder="City">
+                            </div>
+                            <div class="form-holder">
+                                <i class="zmdi zmdi-pin-drop"></i>
+                                <input type="number" name="Pincode" class="form-control" placeholder="Pincode">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-smartphone-android"></i>
+                            <input type="numeric" name="Pnumber" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-account"></i>
+                            <input type="number" name="Age" class="form-control" placeholder="Age">
+                        </div>
+                        <div class="form-holder">
+                            <i class="zmdi zmdi-account"></i>
+                            <select name="gender" class="form-control" placeholder="Gender">
+                                <option value="Male" style="color: black;" >Male</option>
+                                <option value="Female" style="color: black;">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder" >
+                            <input type="text" name="Addfarm" class="form-control" placeholder="Adddress of Farm">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="number" name="Landholding" class="form-control" placeholder="Landholding">
+                        </div>
+                        <div class="form-holder">
+                            <select class="form-control" name="Area">
+                                <option value="Acre" style="color: black;">Acre</option>
+                                <option value="Gunta" style="color: black;">Gunta</option>
+                            </select>
+                        </div>
+                        <div class="form-holder" >
+                            <select class="form-control" name="soiltype">
+                                <option value="Loamy sand" style="color: black;">Loamy Soil</option>
+                                <option value="Fertile" style="color: black;">Fertile</option>
+                                <option value="Clay" style="color: black;">Clay</option>
+                                <option value="Black" style="color: black;">Black</option>
+                                <option value="Heavy" style="color: black;">Heavy</option>
+                                <option value="Sandy" style="color: black;">Sandy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        
+                    </div>
+                </section>
+
+                <!-- SECTION 2 -->
+                <h4></h4>
+                <section>
+                    <h3 style="color: white;">Set Password</h3>
+                    <div class="form-row">
+                        <div class="form-holder w-100">
+                            <input type="password" name="Passw" class="form-control" placeholder="New Password">
+                            <i class="zmdi zmdi-lock-open"></i>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder w-100">
+                            <input type="password" name="CPassw" class="form-control" placeholder="Confirm New Password">
+                            <i class="zmdi zmdi-lock-open"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3 -->
+                <h4></h4>
+                <section>
+                    
+                      <h3 style="margin-bottom: 16px; color:white;">Select Your products</h3>
+                
+                    <div class="row">
+                        
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <h2 style="color: white;">Agricultural : </h2>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri"  value="Barley">Barley
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Bajra">Bajra
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Cotton">Cotton
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Cabbage">Cabbage
+                        </div>
+                        
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Greenchilli">Greenchilli
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Groundnuts">Groundnuts
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Jowar">Jowar
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Mustard">Mustard
+                        </div>
+                        
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Wheat">Wheat
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Soyabean">Soyabean
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Pea">Pea
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="agri" value="Tomato">Tomato
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <h2 style="color: white;">Animal Husbandry : </h2>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="checkbox" name="animal" value="Milk">Milk
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="animal" value="Eggs">Eggs
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="animal" value="Meat">Meat
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="animal" value="Honey">Honey
+                        </div>
+                    </div>
+                     <div class="form-row">
+                        <div class="form-holder">
+                            <h2 style="color: white;">Flowers </h2>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="checkbox" name="flowers" value="Rose">Rose
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="flowers" value="Marigold">Marigold
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="flowers" value="Gerbera">Gerbera
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="flowers" value="Carniation">Carniation
+                        </div>
+                    </div>
+                     <div class="form-row">
+                        <div class="form-holder">
+                            <h2 style="color: white;">Spices </h2>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="checkbox" name="spices" value="Ginger">Ginger
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="spices" value="Turmeric">Turmeric
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="spices" value="Garlic">Garlic
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="spices" value="Coriander">Coriander
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <h2 style="color: white;">Fruits: </h2>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-holder">
+                            <input type="checkbox" name="fruits" value="Mango">Mango
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="fruits" value="Apple">Apple
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="fruits" value="Citrus">Citrus
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="fruits" value="Pear">Pear
+                        </div>
+                        <div class="form-holder">
+                            <input type="checkbox" name="fruits" value="Litchi">Litchi
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4 -->
+                <h4></h4>
+                <section>
+                   <center><button type="submit" name="submit" value="submit" class="button_confirm" style=" border: none;display: inline-flex;height: 62px;width: 200px;align-items: center;color: #fff;cursor: pointer;background: #8eb852;text-transform: uppercase;justify-content: center;letter-spacing: 1px;font-size: 15px;border-radius: 3px;">Click to confirm the details</button></center>
+                    <center><img src="static/login/images/success.png" style="padding-top: 50px"></center>
+                </section>
+            </form>
+        </div>
+  
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+
+    <!-- ALL JS FILES -->
+    <script src="static/login/js/login/all.js"></script>
+    <script src="static/login/js/login/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="static/login/js/login/main.js"></script>
+
+    <script src="static/login/js/reg-farm-js/jquery-3.3.1.min.js"></script>
+        
+    <!-- JQUERY STEP -->
+    <script src="static/login/js/reg-farm-js/jquery.steps.js"></script>
+
+    <script src="static/login/js/reg-farm-js/main.js"></script>
+
+</body>
+
+</html>

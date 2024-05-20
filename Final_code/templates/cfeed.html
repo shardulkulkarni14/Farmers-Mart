@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/profile/css/font-awesome.min.css">
+
+    <!-- Site Metas -->
+    <title>Farmers mart</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <!-- <link rel="shortcut icon" href="profile/images/favicon.ico" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'profile/images/favicon.ico')}}" type="image/x-icon" />
+    <!-- <link rel="apple-touch-icon" href="profile/images/apple-touch-icon.png"> -->
+    <link rel="apple-touch-icon" href="{{url_for('static', filename = 'profile/images/apple-touch-icon.png')}}">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="profile/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/bootstrap.min.css')}}">
+    <!-- Site CSS -->
+    <!-- <link rel="stylesheet" href="profile/css/style.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/style.css')}}">
+   <!-- <link rel="stylesheet" href="profile/css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/try1.css')}}">
+    <!-- Responsive CSS -->
+    <!-- <link rel="stylesheet" href="profile/css/responsive.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/responsive.css')}}">
+    <!-- <link rel="stylesheet" href="profile/css/try1.css"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename = 'profile/css/try1.css')}}">
+    <!-- color -->
+    <!-- <link id="changeable-colors" rel="stylesheet" href="profile/css/colors/orange.css" /> -->
+    <link id="changeable-colors" rel="stylesheet" href="{{url_for('static', filename = 'profile/css/colors/orange.css')}}" />
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+        <!-- <script src="profile/js/modernizer.js"></script> -->
+        <script src="{{url_for('static', filename = 'profile/js/modernizer.js')}}"></script>
+        <!-- vendor -->
+        <!-- <link rel="stylesheet" type="text/css" href="profile/assets/vendor/aos/aos.css"> -->
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'profile/assets/vendor/aos/aos.css')}}">
+          <!-- <link href="profile/assets/vendor/icofont/icofont.min.css" rel="stylesheet"> -->
+          <link href="{{url_for('static', filename = 'profile/assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+
+          
+
+
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.profile/js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <!-- <img src="profile/images/logo.png" alt=""> -->
+                                        <img src="static/indexx/images/lOGOO.png" alt="" style="margin-right: 10px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="{{url_for('customerprofile')}}">Profile</a></li>
+                                    <li><a href="#price">Future Price Pridiction</a></li>
+                                    <li><a href="#growth">Crop Score Report</a></li>
+                                    <li><a href="#offer">Offers/Discounts</a></li>
+                                    <li><a href="cfeed.html">Feed</a></li>
+                                    <li><a href="#partners">Logout</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+  <!-- end site-header -->
+	
+
+
+<div style="background-image: url(static/profile/images/banner.jpg);background-repeat: no-repeat;background-position:center;-webkit-background-size: cover;
+background-attachment: fixed;
+background-size: cover;">
+
+    <section id="post" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2 style="margin-top: 150px; color: white">Post Your Material:</h2>
+                    <form method="POST">
+                        
+                   
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label for="Crop_name">Crop Name :</label>
+                            <select name="cropname" id="cropname" style="color: black">
+                                <option>Rice</option>
+                                <option>Barley</option>
+                                <option>Cotton</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Quantity :</label>
+                            <input type="number" name="quantity"  class="post" style="color: white;background-color: white;">
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Quality :</label>
+                            <input type="text" name="place" class="post" style="color: white;background-color: white;">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="unit">Unit :</label>
+                            <select name="unit" id="unit" style="color: black;width: 70px;">
+                                <option>Kg</option>
+                                <option>Dozen</option>
+                                <option>ton</option>
+                            </select><br>
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Place :</label>
+                            <input type="text" name="place" class="post" style="color: white;background-color: white;">
+                        </div>
+                    
+                        <div class="col-lg-4">
+                            <label>Date :</label>
+                            <input type="date" name="place" class="post" style="color: white;background-color: white;">
+                        </div>
+                    </div>
+                    <center><button type="submit" value="msg" name="Buy Now" style="background-color: orange;font-size: 20px;">Post</button></center>
+                     </form>
+                </div>
+            </div>
+        </section>
+
+    <!-- ======= Offer Section ======= -->
+   
+    <!-- End Offer Section -->
+
+    <!-- ======= farmer score Section ======= -->
+     <section id="farm" class="section">
+       <div class="container">
+          <div class="section-title" >
+          <h2>Farmer Scores</h2>
+        </div>
+        <div class="row">
+          
+       {% for item in total_score %}
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+               
+              <form method="POST">
+               <input type="text" class="card__name" value="{{item[1]}}" name="farmername"  style="margin-left: 70px;">
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 40px;">Crop Name :</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-20px;">
+                    <input type="text" value="{{item[0]}}" name="cropname" style="font-size: 20px;"  >
+                 </div> 
+              </div>
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 40px;">Crop Score :</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-20px;">
+                    <input type="text" value="{{item[2]}}" name="cropscore" style="font-size: 20px;" >
+                 </div> 
+              </div>
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 120px;">Rs:</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-20px;">
+                    <input type="text" value="{{item[3]}}" name="price"  style="font-size: 20px;" >
+                 </div> 
+              </div>
+                <center><button type="submit" value="Buy Now" name="Buy Now">Buy Now</button></center>   
+              </form>
+               
+              
+            </div>
+          </div>
+          {% endfor %}
+          
+    
+          
+        
+        </div>
+       </div>
+     </section>
+     <section id="farm" class="section">
+       <div class="container">
+          <div class="section-title" >
+          <h2>Farmer Scores(All prices)</h2>
+        </div>
+        <form method="POST">
+            
+        
+        <div class="row">
+            <div class="col-lg-3">
+                            <label for="Crop_name">Crop Name :</label>
+                            <select name="rcropnames" id="cropname" style="color: black">
+                                <option value="Rice">Rice</option>
+                                <option value="Barley">Barley</option>
+                                <option value="Cotton">Cotton</option>
+                            </select>
+            </div>
+            <div class="col-lg-3">
+              <button type="submit" value="rcropname" name="Buy Now">Buy Now</button>
+            </div>
+                        
+       </div>
+       </form>
+        {% for item in data_crops %}
+          <div class="col-lg-3">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/ytP9VP86DItizVX2YNA-xTYzV09IS7rh4WexVp7eilIcfHmm74B7odbcwD5DTXmL0PF42i2wnRKSFPBHlmSjCblWHDCD2oD1oaM1CGFcSd48VBKJfsCi4bS170PKxGwji8CPmehwPw=w200-h247-no" alt="Person" class="card__image">
+              
+              <form method="POST">
+               <input type="text" class="card__name" value="{{item[1]}}" name="farmername"  style="margin-left: 70px;">
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 40px;">Crop Name :</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-20px;">
+                    <input type="text" value="{{item[0]['Crop']}}" name="cropname" style="font-size: 20px;"  >
+                 </div> 
+              </div>
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 40px;">Crop Score :</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-20px;">
+                    <input type="text" value="{{item[0]['Score']}}" name="cropscore" style="font-size: 20px;" >
+                 </div> 
+              </div>
+              <div class="row">
+                 <div class="col-lg-7">
+                 <p style="font-size: 20px; margin-left: 120px;">Rs:</p> 
+                 </div> 
+                 <div class="col-lg-5" style="margin-left:-20px;">
+                    <input type="text" value="{{item[0]['Cost']}}{{"/kg"}}" name=""  style="font-size: 20px;" >
+                 </div> 
+              </div>
+                <center><button type="submit" value="Buy Now" name="Buy Now">Buy Now</button></center>   
+              </form>
+                
+              
+            </div>
+          </div>
+{% endfor %}
+          
+    
+          
+        
+        </div>
+       </div>
+     </section>
+    <!-- End farmer Section -->
+
+    <!-- ======= Crop score Section ======= -->
+     <!-- <section id="crop" class="section">
+       <div class="container">
+          <div class="section-title" >
+          <h2>Crop Scores</h2>
+          </div>
+          <div class="row">
+         
+          
+           <div class="row"> 
+        
+        <div class="col-lg-3 content" data-aos="fade-left" style="height: 400px;">
+          <div class="property-card1" >
+              <div class="property-image1" style="background-image: url(static/profile/assets/img/portfolio/portfolio-1.jpg); height: 200px;">
+                <div class="property-image-title">
+                </div>
+              </div>
+            <div class="property-description1" style="padding-bottom: 20px;">
+                <table class="tablescrp1">
+                  <tr>
+                    <th>Crop name:</th>
+                    <th>asd</th>
+                  </tr>
+                  <tr>
+                    <th>Crop Score:</th>
+                    <th>123</th>
+                  </tr>
+                   </table>
+
+              </div>
+              
+              <button>button</button>
+            </div>
+        </div>
+
+    
+      </div>
+        </div>
+     </section> -->
+    <!-- End farmer Section --> 
+    </div>
+  <div id="footer" class="footer-main">
+       
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Our platform aims to empower the farmers by eradicating middlemen who take away a lion's share of commission.</p>
+                                
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Shop</h3>
+                                <ul>
+                                    <li><a href="#">Fruits and Vegetables</a></li>
+                                    <li><a href="#">Dairy Product</a></li>
+                                    <li><a href="#">Stuble</a></li>
+                                    <li><a href="#">Fertilizers for Farmers</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>DYPIEMR, Akurdi, Pune-411044, Maharashtra, India</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+                                    +91 9491655317 
+                                </span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">sihfortune06@gmail.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Our Motto</h3>
+
+                                <p> We aim to enable our farmers to get their maximum share in the truest form by incorporating innovative technological solutions in agriculture.  
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune  <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+     <script type="text/javascript">
+            /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+            (function(d, m){
+              var kommunicateSettings = {"appId":"258b148ca7ddef794193519f0e233efd6","popupWidget":true,"automaticChatOpenOnNavigation":true};
+              var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+              s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+              var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+              window.kommunicate = m; m._globals = kommunicateSettings;
+            })(document, window.kommunicate || {});
+        </script>
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+    <!-- ALL JS FILES -->
+    <!-- <script src="profile/js/all.js"></script> -->
+    <script src="{{url_for('static', filename = 'profile/js/all.js')}}"></script>
+    <!-- <script src="profile/js/bootstrap.min.js"></script>  -->
+    <script src="{{url_for('static', filename = 'profile/js/bootstrap.min.js')}}"></script>
+    <!-- ALL PLUGINS -->
+    <!-- <script src="profile/js/custom.js"></script> -->
+    <script src="{{url_for('static', filename = 'profile/js/custom.js')}}"></script>
+    <!-- <script src="profile/assets/vendor/jquery/jquery.min.js"></script> -->
+    <script src="{{url_for('static', filename = 'profile/assets/vendor/jquery/jquery.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/bootstrap/profile/js/bootstrap.bundle.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/jquery.easing/jquery.easing.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/php-email-form/validate.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/waypoints/jquery.waypoints.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/counterup/counterup.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/counterup/counterup.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/venobox/venobox.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/venobox/venobox.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/owl.carousel/owl.carousel.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/typed.profile/js/typed.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/typed.js/typed.min.js')}}"></script>
+  <!-- <script src="profile/assets/vendor/aos/aos.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/vendor/aos/aos.js')}}"></script>
+
+  <!-- Template Main JS File -->
+  <!-- <script src="profile/assets/profile/js/main.js"></script> -->
+  <script src="{{url_for('static', filename = 'profile/assets/js/main.js')}}"></script>
+
+</body>
+
+</html>

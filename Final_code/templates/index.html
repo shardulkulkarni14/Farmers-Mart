@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>Farmers mart</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="static/indexx/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="static/indexx/images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/indexx/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="static/indexx/css/style.css">
+   <link rel="stylesheet" href="static/indexx/css/try1.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="static/indexx/css/responsive.css">
+<link rel="stylesheet" href="static/indexx/css/try1.css">
+<link rel="stylesheet" type="text/css" href="static/style1.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="static/indexx/css/colors/orange.css" />
+    <link href="https:/unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Modernizer -->
+    <script src="static/indexx/js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https:/oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https:/oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="static/indexx/images/lOGOO.png" alt="" style="margin-right: 10px;"> <!-- style="height: 120px;width: 200px" -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#services">Services</a></li>
+                                    <li><a href="#motto">Motto</a></li>
+                                    <li><a href="#suppliers">Suppliers</a></li>
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#partners">Partners</a></li>
+                                    <li><a href="#team">Team</a></li>
+                                    <li><a href="#contact">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+                    </div>
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+	
+    <div id="home" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell" style="padding-bottom:100px;">
+                            <h1 style="font-family: Impact, Charcoal, sans-serif; font-size: 50px;"><span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Farmers Mart:Farmers Mart" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span><br>Join us today for a start<br> We'll prove your decision is smart</h1>
+                            <div class="book-btn" style="margin-top: 80px">
+                                <a href="{{url_for('login')}}" class="table-btn hvr-underline-from-center">Login</a>
+<!--                                 <a href="" class="table-btn hvr-underline-from-center" style="margin-left: 50px">Register</a> -->
+                                <div class="dropdown" style="margin-left: 50px;">
+                                    <button class="dropbtn">Register</button>
+                                    <div class="dropdown-content">
+                                    <a href="{{url_for('farm')}}">Farmer</a>
+                                    <a href="{{url_for('customer')}}">Customer</a>
+                                    </div>
+                                </div>
+                            </div><!-- 
+                            <a href="#about">
+                                <div class="mouse"></div>
+                            </a> -->
+                        </div>
+                        <!-- end banner-cell -->
+                    </div>
+                    <!-- end banner-text -->
+                </div>
+                <!-- end banner-static -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end banner -->
+
+<section id="banner" class="pad-top-80">
+       <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+                            <br>
+                        About Us    
+                    </h2>
+                    <br>
+                    </div>
+
+
+  <div class="card-grid" style="padding-left: 80px; margin-left: 80px;">
+   
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(static/indexx/images/bggg.jpg)"></div>
+      <div class="card__content">
+        
+        <div class="c">
+            <p> <center><img src="static/indexx/images/question.png" width="45%;"></center> </p>
+            <br>
+
+            <center><h1 style="color:#FFFFFF" ><b> <u>Why Choose Us</u></b></h1></center>
+            
+        </div>
+        <div class="d">
+         <p style="color: #FFFFFF"> Our platform is one of the first connecting farmers directly to the consumers. No middlemen mean that farmers get the best value out of their produce and consumers get the most fresh consumables at the best price </p>
+     </div>
+      </div>
+    </a>
+
+
+
+
+
+
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(static/indexx/images/baba.jpg)"></div>
+      <div class="card__content">
+        <div class="c">
+            <p><center><img src="static/indexx/images/goal.png" width="45%;"></center></p>
+            <br>
+        <center><h1 style="color:#FFFFFF"><b><u>Our Goals</u></b></h1></center>
+    </div>
+        <div class="d">
+         <p style="color: #FFFFFF">  Our goal is to empower the farmers by eradicationg the middlemen who take away a lion's share of commission. </p>
+     </div>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(static/indexx/images/bgGG.jpg)"></div>
+      <div class="card__content">
+        <div class="c">
+       <p><center><img src="static/indexx/images/value.png" width="45%;"></center></p>
+       <br>
+        <center><h1 style="color:#FFFFFF"><b> <u>Our Values</u></b></h1></center>
+    </div>
+        <div class="d">
+         <p style="color: #FFFFFF">  Our values are based on traditional Indian culture where farmers are the "अन्नदाता" and must be protected. While, the consumers are the "देवता" and must be served. </p>
+     </div>
+      </div>
+    </li>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(static/indexx/images/baba.jpg)"></div>
+
+      <div class="card__content">
+<p><center><img src="static/indexx/images/challenge.png" width="45%;"></center> </p>
+<br>
+        <center><h1 style="color:#FFFFFF"><b><u>Our Mission</u></b></h1></center>
+        <div class="d">
+         <p style="color: #FFFFFF">  We aim to generate an agrotech revolotion by incorporating innovative technological solutions in agriculture, enabling farmers to get their maximum share in the truest form. </p>
+     </div>       
+      </div>
+    </a>
+  <div>
+<br>
+</section>
+
+    
+<div id="services">
+    <div class="special-menu pad-top-100 parallax">
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Our Services </h2>
+                    </div>
+                    <div class="bb1">
+                        <div class="container1">
+                            <div class="box1">
+                                <div class="imgBx1">
+                                    <img src="static/indexx/images/farm1.png">
+                                </div>
+                                <div class="content1">
+                                    <h2 style="color: white; font-size: 20px;">Yield</h2>
+                                    <p style="color: white; font-size: 15px;" >When the crop yield is ready, the process begins </p>
+                                    <h2 style="color: white; font-size:20px;">STEP 1</h2>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="imgBx1">
+                                    <img src="static/indexx/images/computer.jpg">
+                                </div>
+                                <div class="content1">
+                                    <h2 style="color: white; font-size: 20px;">Register</h2>
+                                    <p style="color: white; font-size: 15px; ">Start the jounery by creating your account with us</p>
+                                    <h2 style="color: white; font-size:20px;">STEP 2</h2>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="imgBx1">
+                                    <img src="static/indexx/images/fast.png">
+                                </div>
+                                <div class="content1">
+                                    <h2 style="color: white; font-size: 20px;">Delivery</h2>
+                                    <p style="color: white; font-size: 15px;">Fresh & quality produce reaching you in 3.. 2.. 1..</p>
+                                    <h2 style="color: white; font-size:20px;">STEP 3</h2>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="imgBx1">
+                                    <img src="static/indexx/images/h.png">
+                                </div>
+                                <div class="content1">
+                                    <h2 style="color: white; font-size: 20px;">Home</h2>
+                                    <p style="color: white; font-size: 15px;">Farm produce, at your door step. Enjoy!</p>
+                                    <h2 style="color: white; font-size:20px;"> STEP 4</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end special-menu -->
+
+    <div id="motto" class="about-main pad-top-70 pad-bottom-60" style="background-color: #d9d9d9; background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);">
+        <div class="container">
+            <div class="row">
+                <h2 class="block-title text-center" >
+                        Our Motto   
+                    </h2>
+                    <br>
+                 <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="about-images">
+                            <br>
+                            <br>
+                            <img class="about-main" src="static/indexx/images/farmer.jpg" alt="About Main Image">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3" style="margin-top: 90px;">
+                                <img src="static/indexx/images/farm.png" style="border-radius: 50%;">
+                            </div>
+                            <div class="col-lg-9">
+                                <h1 style="font-size: 30px; font-family:Impact, Charcoal, sans-serif;"><center>Hello Farmer</center></h1>
+                                <p  style="">
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"></i>Farmer Branding</li>
+                                <li class="list-group-item"></i> Direct interaction between farmer and customer</li>
+                                <li class="list-group-item"></i> Immediate bank transfer of funds</li>
+                                <li class="list-group-item"></i> Greater approach</li>
+                                <li class="list-group-item"></i> Discount on fertilizers</li>
+                                <!-- <li class="list-group-item"></i> 24x7 Support</li> -->
+                            </ul> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                     <div class="container">
+                        <div class="row">
+                            
+                            <div class="col-lg-9">
+                                <h1 style="font-size:30px; font-family:Impact, Charcoal, sans-serif;"><center>Hello Consumer</center></h1>
+                                <p  style="">
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"></i> Fresh from the farm</li>
+                                <li class="list-group-item"></i> Transparency</li>
+                                <li class="list-group-item"></i> Supply chain managment (Block chain )</li>
+                                <li class="list-group-item"></i> Various Discounts</li>
+                                <li class="list-group-item"></i> Quality assured products</li>
+                            </ul>
+                                </p>
+                            </div>
+                            <div class="col-lg-3" style="margin-top: 90px;">
+                                <img src="static/indexx/images/buyer.png" style="border-radius: 20%;">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                     <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3" style="margin-top: 70px;">
+                                <img src="static/indexx/images/globe.png" style="border-radius: 50%;">
+                            </div>
+                            <div class="col-lg-9">
+                                <h1 style="font-size: 30px; font-family:Impact, Charcoal, sans-serif;"><center>Hello Social</center></h1>
+                                <p  style="">
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"></i> Daily update for events</li>
+                                <li class="list-group-item"></i> Community discount</li>
+                                <li class="list-group-item"></i> Credit Sysytem for redeeming vouchers</li>
+                                <li class="list-group-item"></i> Demand and supply chain using offline system</li>
+                            </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                        <!-- <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p> -->
+                    </div>
+                    
+                    <!-- end tab-menu -->
+                </div>
+                <br>
+                
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end menu -->
+</div>
+
+
+
+
+    <div id="suppliers" class="team-main pad-top-100 pad-bottom-100 parallax" s>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Our Suppliers	
+					</h2>
+                       <!--  <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p> -->
+                    </div>
+                    <div class="o-video">
+                        
+                        </div>
+                    <!-- end team-box -->
+                   <div class="container">
+                       <div class="row">
+                        <div class="col-md-4 col-sm-4 text-center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="pric-icon">
+                                    <img src="static/indexx/images/f1.jpeg" alt="" / style=" border-radius: 40%;">
+                                </div>
+                              
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><strong>Mr. Anant <span>Kokate</span></strong></p>
+                            </div>
+                            
+
+
+
+
+
+
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"></i> MSc Agriculture</li>
+                                <li class="list-group-item"></i> Faculty:- Agronomy</li>
+                                <li class="list-group-item"></i> Awarded Gold Medal from Marhatwada Agricultural University, Parbhani, Maharashtra</li>
+                                <li class="list-group-item"></i> Residing at Bhainsa,Dist :- Nirmal,Telangana State</li>
+                                                           </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                               
+                           </div>
+                           <div class="col-md-7">
+                            <br>
+                            <br>
+                            <br>
+                               <iframe src="https:/www.youtube.com/embed/WzD-KNtMKPg" allowfullscreen style="height: 500px; width: 700px;" ></iframe>
+                           </div>
+                         
+                                
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end team-main -->
+
+    <div id="gallery" class="gallery-main pad-top-100 pad-bottom-100" style="background-color:#202020"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Special Offers 
+					</h2>
+                        <p class="title-caption text-center">We have special offers for our Farmers and our Customers </p>
+                    </div>
+                    <section class="text-gray-700 body-font">
+                        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                            <div class="flex flex-wrap md:-m-2 -m-1">
+                                <div class="flex flex-wrap w-1/2">
+                                    <div class="md:p-2 p-1 w-1/2">
+                                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="static/indexx/images/apple.png">
+                                    </div>
+                                    <div class="md:p-2 p-1 w-1/2">
+                                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="static/indexx/images/brinjal.png">
+                                    </div>
+                                    <div class="md:p-2 p-1 w-full">
+                                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="static/indexx/images/banana.png">
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap w-1/2">
+                                    <div class="md:p-2 p-1 w-full">
+                                        <img alt="gallery" class="w-full h-full object-cover object-center block" src="static/indexx/images/onion.png">
+                                    </div>
+                                    <div class="md:p-2 p-1 w-1/2">
+                                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="static/indexx/images/wheat.png">
+                                    </div>
+                                    <div class="md:p-2 p-1 w-1/2">
+                                        <img alt="gallery" class="w-full object-cover h-full object-center block" src="static/indexx/images/ferti.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end gal-container -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end gallery-main -->
+
+    <div id="partners" class="blog-main pad-top-100 pad-bottom-100 parallax" style="background: url(static/indexx/images/team.gif); background-repeat: no-repeat; background-size:75% 100% ;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="block-title text-center">
+					Our Partners	
+				</h2>
+                   <section class="text-gray-700 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    
+    <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/4 md:w-1/2" >
+            <div class="h-full flex flex-col items-center text-center" style="height: 300px">
+                <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="static/indexx/images/logo1.png" style="margin-top: 120px; background-color:white;">
+            </div>
+        </div>
+      <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="static/indexx/images/logo2.png" style="margin-top: 120px; background-color:white;">
+          
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="static/indexx/images/logo3.png" style="margin-top: 120px; background-color:white;">
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="h-full flex flex-col items-center text-center">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="static/indexx/images/abcddd.png" style="margin-top: 120px">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+                    <!-- end blog-box -->
+
+                    
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end blog-main -->
+
+    
+       
+    <!-- end pricing-main -->
+	<div id="team" class="team-main pad-top-100 pad-bottom-60 parallax" style="background-image: url(static/indexx/images/teamm.png);">
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+                        Our Team    
+                    </h2>
+                        <!-- <p class="title-caption text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p> -->
+                    </div>
+                    <div class="team-box" >
+                            <div id="about" class="about-main pad-top-100 pad-bottom-100" style="background: transparent;">
+                                    <div class="container text-center">
+                                        <div class="carousel slide row item" data-ride="carousel" data-type="multi" data-interval="" id="myCarousel">
+                                            <div class="carousel-inner">
+                                                <div class="item active">
+                                            <div class="col-md-2 col-xs-12"><a href="#"><img src="static/indexx/images/abhi.jpg" class="img-responsive" style="border-radius: 50%;"></a></div>
+                                        </div>
+                                        <div class="item active"> 
+                                            <div class="col-md-2 col-xs-12"><a href="#"><img src="static/indexx/images/simren.jpg" class="img-responsive" style="border-radius: 50%;"></a></div>
+                                        </div>
+                                        <div class="item active">
+                                            <div class="col-md-2 col-xs-12"><a href="#"><img src="static/indexx/images/shar.jpg" class="img-responsive" style="border-radius: 50%"></a></div>
+                                        </div>
+                                        <div class="item active">
+                                            <div class="col-md-2 col-xs-12"><a href="#"><img src="static/indexx/images/sana.jpg" class="img-responsive" style="border-radius: 50%; background-color: white;"></a></div>
+                                        </div>
+                                        <div class="item active">
+                                            <div class="col-md-2 col-xs-12"><a href="#"><img src="static/indexx/images/kedar.jpg" class="img-responsive" style="border-radius: 50%; background-color: white;"></a></div>
+                                        </div>
+                                        <div class="item active">
+                                            <div class="col-md-2 col-xs-12"><a href="#"><img src="static/indexx/images/sri.jpg" class="img-responsive" style="border-radius: 50%; background-color: white;"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- end reservations-main -->
+    <div id="contact">
+        
+
+<section class="text-gray-700 body-font relative">
+  <div class="container py-24 mx-auto flex sm:flex-no-wrap flex-wrap" style="background-image: url(static/indexx/images/contact1.gif);background-size: 400px; background-position: center;background-repeat: no-repeat;">
+    <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative" style="height: 500px;width: 400px">
+      <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15121.631403099624!2d73.7600116!3d18.6456854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed7869959e7d6300!2sDr.%20D.Y.%20Patil%20Institute%20of%20Engineering%2C%20Management%20and%20Research!5e0!3m2!1sen!2sin!4v1596271866004!5m2!1sen!2sin?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4); "></iframe>
+      <div class="bg-white relative flex flex-wrap py-6">
+        <div class="lg:w-1/2 px-6">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">ADDRESS</h2>
+          <p class="leading-relaxed">DYPIEMR, Akurdi, Pune-411044, Maharashtra, India</p>
+        </div>
+        <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm">EMAIL</h2>
+          <a class="text-indigo-500 leading-relaxed">sihfortune06@gmail.com</a>
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mt-4">PHONE</h2>
+          <p class="leading-relaxed">+91 9491655317</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+      <h2 class="block-title text-center">
+                        Contact Us
+                    </h2>
+      <form id="contact-form" method="post" class="reservations-box" name="contactform" action="mail.php">
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="form_name" id="form_name" placeholder="Name" required="required" data-error="Firstname is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="email" name="email" id="email" placeholder="E-Mail ID" required="required" data-error="E-mail id is required.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="phone" id="phone" placeholder="contact no.">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <div class="form-box">
+                                    <input type="text" name="phone" id="phone" placeholder="Message">
+                                </div>
+                            </div>
+                            <!-- end col -->
+                    
+                            <!-- end col -->
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="reserve-book-btn text-center">
+                                    <button class="hvr-underline-from-center" type="submit" value="SEND" id="submit">Click to ask </button>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </form>
+    </div>
+  </div>
+</section>
+    <div id="footer" class="footer-main">
+       
+        <!-- end footer-news -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>About Us</h3>
+                                <p>Our platform aims to empower the farmers by eradicating middlemen who take away a lion's share of commission.</p>
+                                
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-twitter"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-google-plus"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-pinterest"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="social-circle-border"><i class="fa fa-linkedin"></i></div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Shop</h3>
+                                <ul>
+                                    <li><a href="#">Fruits and Vegetables</a></li>
+                                    <li><a href="#">Dairy Product</a></li>
+                                    <li><a href="#">Stuble</a></li>
+                                    <li><a href="#">Fertilizers for Farmers</a></li>
+                                </ul>
+                            </div>
+                            <!-- end footer-box-b -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                <p>
+                                    <i class="fa fa-map-signs" aria-hidden="true"></i>
+                                    <span>DYPIEMR, Akurdi, Pune-411044, Maharashtra, India</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+									+91 9491655317 
+								</span>
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">sihfortune06@gmail.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Our Motto</h3>
+
+                                <p> We aim to enable our farmers to get their maximum share in the truest form by incorporating innovative technological solutions in agriculture.  
+                            </div>
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 Team Fortune  <a href="#" target="_blank"></a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <!-- Colors -->
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Color Scheme</h4>
+            <a title="orange" class="switcher orange-bg"></a>
+            <a title="strong-blue" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+    <!-- ALL JS FILES -->
+    <script src="static/indexx/js/all.js"></script>
+    <script src="static/indexx/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="static/indexx/js/custom.js"></script>
+</body>
+
+</html>
